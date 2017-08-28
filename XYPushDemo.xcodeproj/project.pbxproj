@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F66DF761F53A30D0003373D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F66DF751F53A30D0003373D /* main.m */; };
+		2F66DF791F53A30D0003373D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F66DF781F53A30D0003373D /* AppDelegate.m */; };
+		2F66DF7C1F53A30D0003373D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F66DF7B1F53A30D0003373D /* ViewController.m */; };
+		2F66DF7F1F53A30D0003373D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F66DF7D1F53A30D0003373D /* Main.storyboard */; };
+		2F66DF811F53A30D0003373D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F66DF801F53A30D0003373D /* Assets.xcassets */; };
+		2F66DF841F53A30D0003373D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F66DF821F53A30D0003373D /* LaunchScreen.storyboard */; };
+		2F66DF8E1F53A4100003373D /* XYPushManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F66DF8D1F53A4100003373D /* XYPushManage.m */; };
+		2F66DF971F53A5550003373D /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F66DF961F53A5550003373D /* NotificationService.m */; };
+		2F66DF9B1F53A5550003373D /* XYPushDemoNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F66DF931F53A5540003373D /* XYPushDemoNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F66DFA61F53A5730003373D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F66DFA51F53A5730003373D /* UserNotifications.framework */; };
+		2F66DFA81F53A5730003373D /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F66DFA71F53A5730003373D /* UserNotificationsUI.framework */; };
+		2F66DFAC1F53A5730003373D /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F66DFAB1F53A5730003373D /* NotificationViewController.m */; };
+		2F66DFAF1F53A5730003373D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F66DFAD1F53A5730003373D /* MainInterface.storyboard */; };
+		2F66DFB31F53A5730003373D /* XYPushDemoNotificationViewController.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F66DFA41F53A5730003373D /* XYPushDemoNotificationViewController.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F66DFB71F53A68C0003373D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F66DFA51F53A5730003373D /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2F66DFB91F53A6BC0003373D /* libGeTuiSdk-1.6.4.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F66DFB81F53A6BC0003373D /* libGeTuiSdk-1.6.4.1.a */; };
+		2F66DFBB1F53A6D00003373D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F66DFBA1F53A6D00003373D /* libsqlite3.tbd */; };
+		2F66DFBD1F53A6DA0003373D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F66DFBC1F53A6DA0003373D /* libz.tbd */; };
+		99CE7031A6DA526D92C7C28D /* libPods-XYPushDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB7328294B28189C1F859E /* libPods-XYPushDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F66DF991F53A5550003373D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F66DF691F53A30D0003373D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F66DF921F53A5540003373D;
+			remoteInfo = XYPushDemoNotificationService;
+		};
+		2F66DFB11F53A5730003373D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F66DF691F53A30D0003373D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F66DFA31F53A5730003373D;
+			remoteInfo = XYPushDemoNotificationViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F66DF9F1F53A5550003373D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F66DFB31F53A5730003373D /* XYPushDemoNotificationViewController.appex in Embed App Extensions */,
+				2F66DF9B1F53A5550003373D /* XYPushDemoNotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		234E82674959878836E2649F /* Pods-XYPushDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYPushDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYPushDemo/Pods-XYPushDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2F66DF711F53A30D0003373D /* XYPushDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYPushDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F66DF751F53A30D0003373D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F66DF771F53A30D0003373D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F66DF781F53A30D0003373D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F66DF7A1F53A30D0003373D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F66DF7B1F53A30D0003373D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F66DF7E1F53A30D0003373D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F66DF801F53A30D0003373D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F66DF831F53A30D0003373D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F66DF851F53A30D0003373D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F66DF8C1F53A4100003373D /* XYPushManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPushManage.h; sourceTree = "<group>"; };
+		2F66DF8D1F53A4100003373D /* XYPushManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPushManage.m; sourceTree = "<group>"; };
+		2F66DF931F53A5540003373D /* XYPushDemoNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XYPushDemoNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F66DF951F53A5550003373D /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		2F66DF961F53A5550003373D /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		2F66DF981F53A5550003373D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F66DFA41F53A5730003373D /* XYPushDemoNotificationViewController.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XYPushDemoNotificationViewController.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F66DFA51F53A5730003373D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		2F66DFA71F53A5730003373D /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		2F66DFAA1F53A5730003373D /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		2F66DFAB1F53A5730003373D /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		2F66DFAE1F53A5730003373D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2F66DFB01F53A5730003373D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F66DFB81F53A6BC0003373D /* libGeTuiSdk-1.6.4.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGeTuiSdk-1.6.4.1.a"; path = "Pods/GTSDK/libGeTuiSdk-1.6.4.1.a"; sourceTree = "<group>"; };
+		2F66DFBA1F53A6D00003373D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2F66DFBC1F53A6DA0003373D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4FEB7328294B28189C1F859E /* libPods-XYPushDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYPushDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1AF9D8CB41C7762EBB18FB3 /* Pods-XYPushDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYPushDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYPushDemo/Pods-XYPushDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F66DF6E1F53A30D0003373D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CE7031A6DA526D92C7C28D /* libPods-XYPushDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F66DF901F53A5540003373D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DFBD1F53A6DA0003373D /* libz.tbd in Frameworks */,
+				2F66DFBB1F53A6D00003373D /* libsqlite3.tbd in Frameworks */,
+				2F66DFB91F53A6BC0003373D /* libGeTuiSdk-1.6.4.1.a in Frameworks */,
+				2F66DFB71F53A68C0003373D /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F66DFA11F53A5730003373D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DFA81F53A5730003373D /* UserNotificationsUI.framework in Frameworks */,
+				2F66DFA61F53A5730003373D /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F66DF681F53A30D0003373D = {
+			isa = PBXGroup;
+			children = (
+				2F66DF731F53A30D0003373D /* XYPushDemo */,
+				2F66DF941F53A5550003373D /* XYPushDemoNotificationService */,
+				2F66DFA91F53A5730003373D /* XYPushDemoNotificationViewController */,
+				2F66DF721F53A30D0003373D /* Products */,
+				5371BB3F7DD9FF56E19A7461 /* Pods */,
+				6EA505BC9F758CDFF8A1A704 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F66DF721F53A30D0003373D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DF711F53A30D0003373D /* XYPushDemo.app */,
+				2F66DF931F53A5540003373D /* XYPushDemoNotificationService.appex */,
+				2F66DFA41F53A5730003373D /* XYPushDemoNotificationViewController.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F66DF731F53A30D0003373D /* XYPushDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DF8B1F53A3FB0003373D /* XYPushManage */,
+				2F66DF771F53A30D0003373D /* AppDelegate.h */,
+				2F66DF781F53A30D0003373D /* AppDelegate.m */,
+				2F66DF7A1F53A30D0003373D /* ViewController.h */,
+				2F66DF7B1F53A30D0003373D /* ViewController.m */,
+				2F66DF7D1F53A30D0003373D /* Main.storyboard */,
+				2F66DF801F53A30D0003373D /* Assets.xcassets */,
+				2F66DF821F53A30D0003373D /* LaunchScreen.storyboard */,
+				2F66DF851F53A30D0003373D /* Info.plist */,
+				2F66DF741F53A30D0003373D /* Supporting Files */,
+			);
+			path = XYPushDemo;
+			sourceTree = "<group>";
+		};
+		2F66DF741F53A30D0003373D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DF751F53A30D0003373D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F66DF8B1F53A3FB0003373D /* XYPushManage */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DF8C1F53A4100003373D /* XYPushManage.h */,
+				2F66DF8D1F53A4100003373D /* XYPushManage.m */,
+			);
+			path = XYPushManage;
+			sourceTree = "<group>";
+		};
+		2F66DF941F53A5550003373D /* XYPushDemoNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DF951F53A5550003373D /* NotificationService.h */,
+				2F66DF961F53A5550003373D /* NotificationService.m */,
+				2F66DF981F53A5550003373D /* Info.plist */,
+			);
+			path = XYPushDemoNotificationService;
+			sourceTree = "<group>";
+		};
+		2F66DFA91F53A5730003373D /* XYPushDemoNotificationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DFAA1F53A5730003373D /* NotificationViewController.h */,
+				2F66DFAB1F53A5730003373D /* NotificationViewController.m */,
+				2F66DFAD1F53A5730003373D /* MainInterface.storyboard */,
+				2F66DFB01F53A5730003373D /* Info.plist */,
+			);
+			path = XYPushDemoNotificationViewController;
+			sourceTree = "<group>";
+		};
+		5371BB3F7DD9FF56E19A7461 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1AF9D8CB41C7762EBB18FB3 /* Pods-XYPushDemo.debug.xcconfig */,
+				234E82674959878836E2649F /* Pods-XYPushDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6EA505BC9F758CDFF8A1A704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F66DFBC1F53A6DA0003373D /* libz.tbd */,
+				2F66DFBA1F53A6D00003373D /* libsqlite3.tbd */,
+				2F66DFB81F53A6BC0003373D /* libGeTuiSdk-1.6.4.1.a */,
+				4FEB7328294B28189C1F859E /* libPods-XYPushDemo.a */,
+				2F66DFA51F53A5730003373D /* UserNotifications.framework */,
+				2F66DFA71F53A5730003373D /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F66DF701F53A30D0003373D /* XYPushDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F66DF881F53A30D0003373D /* Build configuration list for PBXNativeTarget "XYPushDemo" */;
+			buildPhases = (
+				26E87B2F6C9DB0CBC3817F43 /* [CP] Check Pods Manifest.lock */,
+				2F66DF6D1F53A30D0003373D /* Sources */,
+				2F66DF6E1F53A30D0003373D /* Frameworks */,
+				2F66DF6F1F53A30D0003373D /* Resources */,
+				961F21E2B865AFD4B09CB7E1 /* [CP] Embed Pods Frameworks */,
+				1A76EA563E5F32E40BB62E94 /* [CP] Copy Pods Resources */,
+				2F66DF9F1F53A5550003373D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F66DF9A1F53A5550003373D /* PBXTargetDependency */,
+				2F66DFB21F53A5730003373D /* PBXTargetDependency */,
+			);
+			name = XYPushDemo;
+			productName = XYPushDemo;
+			productReference = 2F66DF711F53A30D0003373D /* XYPushDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F66DF921F53A5540003373D /* XYPushDemoNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F66DF9C1F53A5550003373D /* Build configuration list for PBXNativeTarget "XYPushDemoNotificationService" */;
+			buildPhases = (
+				2F66DF8F1F53A5540003373D /* Sources */,
+				2F66DF901F53A5540003373D /* Frameworks */,
+				2F66DF911F53A5540003373D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYPushDemoNotificationService;
+			productName = XYPushDemoNotificationService;
+			productReference = 2F66DF931F53A5540003373D /* XYPushDemoNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2F66DFA31F53A5730003373D /* XYPushDemoNotificationViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F66DFB41F53A5730003373D /* Build configuration list for PBXNativeTarget "XYPushDemoNotificationViewController" */;
+			buildPhases = (
+				2F66DFA01F53A5730003373D /* Sources */,
+				2F66DFA11F53A5730003373D /* Frameworks */,
+				2F66DFA21F53A5730003373D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYPushDemoNotificationViewController;
+			productName = XYPushDemoNotificationViewController;
+			productReference = 2F66DFA41F53A5730003373D /* XYPushDemoNotificationViewController.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F66DF691F53A30D0003373D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tanghaiyang;
+				TargetAttributes = {
+					2F66DF701F53A30D0003373D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R2U8SE68WE;
+						ProvisioningStyle = Automatic;
+					};
+					2F66DF921F53A5540003373D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R2U8SE68WE;
+						ProvisioningStyle = Automatic;
+					};
+					2F66DFA31F53A5730003373D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R2U8SE68WE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2F66DF6C1F53A30D0003373D /* Build configuration list for PBXProject "XYPushDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F66DF681F53A30D0003373D;
+			productRefGroup = 2F66DF721F53A30D0003373D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F66DF701F53A30D0003373D /* XYPushDemo */,
+				2F66DF921F53A5540003373D /* XYPushDemoNotificationService */,
+				2F66DFA31F53A5730003373D /* XYPushDemoNotificationViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F66DF6F1F53A30D0003373D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DF841F53A30D0003373D /* LaunchScreen.storyboard in Resources */,
+				2F66DF811F53A30D0003373D /* Assets.xcassets in Resources */,
+				2F66DF7F1F53A30D0003373D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F66DF911F53A5540003373D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F66DFA21F53A5730003373D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DFAF1F53A5730003373D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A76EA563E5F32E40BB62E94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYPushDemo/Pods-XYPushDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E87B2F6C9DB0CBC3817F43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYPushDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961F21E2B865AFD4B09CB7E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYPushDemo/Pods-XYPushDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F66DF6D1F53A30D0003373D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DF7C1F53A30D0003373D /* ViewController.m in Sources */,
+				2F66DF791F53A30D0003373D /* AppDelegate.m in Sources */,
+				2F66DF761F53A30D0003373D /* main.m in Sources */,
+				2F66DF8E1F53A4100003373D /* XYPushManage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F66DF8F1F53A5540003373D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DF971F53A5550003373D /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F66DFA01F53A5730003373D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F66DFAC1F53A5730003373D /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F66DF9A1F53A5550003373D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F66DF921F53A5540003373D /* XYPushDemoNotificationService */;
+			targetProxy = 2F66DF991F53A5550003373D /* PBXContainerItemProxy */;
+		};
+		2F66DFB21F53A5730003373D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F66DFA31F53A5730003373D /* XYPushDemoNotificationViewController */;
+			targetProxy = 2F66DFB11F53A5730003373D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F66DF7D1F53A30D0003373D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F66DF7E1F53A30D0003373D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F66DF821F53A30D0003373D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F66DF831F53A30D0003373D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2F66DFAD1F53A5730003373D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F66DFAE1F53A5730003373D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F66DF861F53A30D0003373D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F66DF871F53A30D0003373D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F66DF891F53A30D0003373D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1AF9D8CB41C7762EBB18FB3 /* Pods-XYPushDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R2U8SE68WE;
+				INFOPLIST_FILE = XYPushDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanghaiyang.XYPushDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		2F66DF8A1F53A30D0003373D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234E82674959878836E2649F /* Pods-XYPushDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R2U8SE68WE;
+				INFOPLIST_FILE = XYPushDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanghaiyang.XYPushDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		2F66DF9D1F53A5550003373D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2U8SE68WE;
+				INFOPLIST_FILE = XYPushDemoNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GTSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tanghaiyang.XYPushDemo.XYPushDemoNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2F66DF9E1F53A5550003373D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2U8SE68WE;
+				INFOPLIST_FILE = XYPushDemoNotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GTSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tanghaiyang.XYPushDemo.XYPushDemoNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2F66DFB51F53A5730003373D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2U8SE68WE;
+				INFOPLIST_FILE = XYPushDemoNotificationViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanghaiyang.XYPushDemo.XYPushDemoNotificationViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2F66DFB61F53A5730003373D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R2U8SE68WE;
+				INFOPLIST_FILE = XYPushDemoNotificationViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanghaiyang.XYPushDemo.XYPushDemoNotificationViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F66DF6C1F53A30D0003373D /* Build configuration list for PBXProject "XYPushDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F66DF861F53A30D0003373D /* Debug */,
+				2F66DF871F53A30D0003373D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F66DF881F53A30D0003373D /* Build configuration list for PBXNativeTarget "XYPushDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F66DF891F53A30D0003373D /* Debug */,
+				2F66DF8A1F53A30D0003373D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F66DF9C1F53A5550003373D /* Build configuration list for PBXNativeTarget "XYPushDemoNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F66DF9D1F53A5550003373D /* Debug */,
+				2F66DF9E1F53A5550003373D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F66DFB41F53A5730003373D /* Build configuration list for PBXNativeTarget "XYPushDemoNotificationViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F66DFB51F53A5730003373D /* Debug */,
+				2F66DFB61F53A5730003373D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F66DF691F53A30D0003373D /* Project object */;
+}
